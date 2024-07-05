@@ -2,23 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2020-01-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/markdown/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/markdown-syntax-guide/</loc>
+    <loc>http://localhost:1313/progetti/markdown-syntax/</loc>
+    <lastmod>2020-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/progetti/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/syntax/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/bear/</loc>
+    <loc>http://localhost:1313/bio/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo/</loc>
+    <loc>http://localhost:1313/passioni/</loc>
+  </url><url>
+    <loc>http://localhost:1313/lavoro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/triathlon/</loc>
   </url>
 </urlset>

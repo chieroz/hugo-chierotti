@@ -2,27 +2,21 @@
 # This title is used as the og:title on Hugo's internal
 # opengraph structured data template on the home page.
 # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-title = "Hugo ʕ•ᴥ•ʔ Bear"
+title = "Home"
 +++
 
-# A match made in heaven
+## mi chiamo Carlo Mario Chierotti
 
-There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
-
-Hugo Bear Blog is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
-
-[Go to the original bear blog](https://bearblog.dev/).
+sviluppo applicazioni web su piattaforme LAMP/LEMP, amministro sistemi macOS e Linux (on-premises e nel cloud: AWS, DigitalOcean, Vultr e altri) e traduco dall'inglese all'italiano per editoria e media.
 
 ---
 
-What happens when you combine the worlds' fastest, most lightweight static site generator with a design theme built to provide you with free, no-nonsense, super-fast blogging capabilities?
+Qui trovate qualche notizia su di me e sulle mie passioni e alcuni dei progetti che ho sviluppato.
 
-**Use this theme, and find out!**
+Potete leggere la mia [tesi di laurea](https://kircher.chierotti.it) su Athanasius Kircher, che pur essendo ormai un reperto archeologico riveste un suo interesse. Nella sezione trovate anche materiali e articoli dedicati a Kircher.
 
-Made with 💟 by [Jan Raasch](https://www.janraasch.com).
+Il mio profilo professionale è su LinkedIn e mi trovate anche su [GitHub](https://github.com/chieroz).
 
 ---
 
-Simply publish content online, grow an audience, and keep your pages tiny, fast, and **optimized for search engines**.
-
-Each page is ~5kb, and you can **host your blog yourself**.
+Questo sito è fatto con [Hugo](https://gohugo.io)

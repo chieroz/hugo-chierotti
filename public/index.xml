@@ -1,34 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo ʕ•ᴥ•ʔ Bear on Hugo ʕ•ᴥ•ʔ Bear Blog</title>
+    <title>Home on chierotti.it</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Hugo ʕ•ᴥ•ʔ Bear on Hugo ʕ•ᴥ•ʔ Bear Blog</description>
+    <description>Recent content in Home on chierotti.it</description>
     <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>Copyright © 2020, Jane Doe.</copyright>
+    <language>it-IT</language>
+    <copyright>Copyright © 2024, Carlo Mario Chierotti.</copyright>
     <lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/markdown-syntax-guide/</link>
+      <link>http://localhost:1313/progetti/markdown-syntax/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/markdown-syntax-guide/</guid>
+      <guid>http://localhost:1313/progetti/markdown-syntax/</guid>
       <description>&lt;p&gt;For a quick cheatsheet, check out &lt;a href=&#34;https://simplemde.com/markdown-guide&#34;&gt;https://simplemde.com/markdown-guide&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Bear</title>
-      <link>http://localhost:1313/bear/</link>
+      <title>Bio</title>
+      <link>http://localhost:1313/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bear/</guid>
-      <description>Bear Website: https://bearblog.dev&#xA;There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.&#xA;Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on any viewing device. All you need to focus on is writing good content.&#xA;Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and optimized for search engines.</description>
+      <guid>http://localhost:1313/bio/</guid>
+      <description>Long story short Sono nato ad Acqui Terme e sono cresciuto a Genova e poi ad Alessandria. Sono cose che segnano.&#xA;Ho fatto l&amp;rsquo;università a Torino e dopo essermi sposato ho abitato per quasi 15 anni ad Acqui Terme. Con la fine del mio matrimonio mi sono trasferito a Torino. Per un periodo mi sono trasferito a Monastero Bormida, nella Langa astigiana, dove ho ristrutturato un rudere di famiglia.&#xA;Poi ho conosciuto Carla, ci siamo sposati e sono tornato a vivere a Torino, a poca distanza dal Po e dal parco del Valentino.</description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/hugo/</link>
+      <title>Lavoro</title>
+      <link>http://localhost:1313/lavoro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo/</guid>
-      <description>Hugo Website: https://gohugo.io&#xA;Written in Go, Hugo is an open-source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML, and JSON data file types, Markdown and HTML content files, and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification, and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:</description>
+      <guid>http://localhost:1313/lavoro/</guid>
+      <description>Lavoro I computer mi sono sempre piaciuti e ho iniziato a bazzicare Internet quando ancora ci si doveva collegare con un modem in teleselezione. La prima volta ho impiegato circa un giorno a configurare lo script per l&amp;rsquo;accesso. Era il 1994, sembra un milione di anni fa.&#xA;Ho fatto il mio primo sito su GeoCities e ho iniziato a pasticciare con l&amp;rsquo;HTML. Non sapevo niente di javascript, linguaggi di programmazione, database relazionali e tutte le diavolerie che adesso riesco a maneggiare, ma quell&amp;rsquo;epoca era una competenza sufficiente per riuscire a mettere insieme qualcosa di presentabile, tanto che nel 2000 EDT, per la quale lavoravo come traduttore, mi propose di iniziare a collaborare come webmaster.</description>
+    </item>
+    <item>
+      <title>Passioni</title>
+      <link>http://localhost:1313/passioni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/passioni/</guid>
+      <description>Passioni Ho iniziato a praticare sport da ragazzino. A 14 anni ero già alto 185 cm e giocavo a basket nei campionati giovanili. Come capita spesso a chi viene sottoposto ad allenamenti quotidiani, una volta chiuso quel capitolo ho tralasciato per qualche anno la pratica sportiva e verso i 25 anni sono arrivato a pesare più di un quintale, poi mi sono dato una regolata. Ho ripreso ad andare in bicicletta e a correre.</description>
+    </item>
+    <item>
+      <title>Triathlon</title>
+      <link>http://localhost:1313/triathlon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/triathlon/</guid>
+      <description>Triathlon Nuoto, bicicletta, corsa, passione per gli sport di resistenza: aggiungiamo che ad Acqui esiste da sempre una nutrita schiera di triathleti e che molti di loro sono miei amici, e si capirà che era inevitabile che mi lasciassi tentare da questa meravigliosa disciplina. Ho esordito nel triathlon olimpico di Viareggio nel 2001. Dopo due anni di gare ho ceduto al fascino dell&amp;rsquo;Ironman, una gara che prevede 3,8 km di nuoto, 180 km di bicicletta e 42,195 km di corsa.</description>
     </item>
   </channel>
 </rss>
