@@ -5,7 +5,7 @@
 title = "Home"
 +++
 
-## mi chiamo Carlo Mario Chierotti
+# mi chiamo Carlo Mario Chierotti
 
 sviluppo applicazioni web su piattaforme LAMP/LEMP, amministro sistemi macOS e Linux (on-premises e nel cloud: AWS, DigitalOcean, Vultr e altri) e traduco dall'inglese all'italiano per editoria e media.
 
