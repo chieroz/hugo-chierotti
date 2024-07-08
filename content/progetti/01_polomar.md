@@ -1,11 +1,8 @@
 +++
 title = "Polomar Real Estate"
 date = "2020-01-03"
+weight = 10
 +++
-
-Anim esse incididunt proident ullamco deserunt
-
----
 
 Deserunt voluptate et consequat. Et consequat proident tempor non. Proident tempor non, in veniam culpa. In veniam culpa nulla aliqua reprehenderit sit ex. Culpa nulla aliqua reprehenderit.
 
