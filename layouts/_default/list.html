@@ -1,5 +1,11 @@
 {{ define "main" }}
 <content>
+  {{ .Content }}
+</content>
+
+<hr>
+
+<content>
   <ul class="blog-posts">
     {{ range .Pages }}
     <li>

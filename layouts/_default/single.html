@@ -4,6 +4,11 @@
   <h1>{{ .Title }}</h1>
   {{ end }}
 {{ end }}
+{{ if eq .Type "progetti" }}
+  {{ if not .Params.menu }}
+  <h1>{{ .Title }}</h1>
+  {{ end }}
+{{ end }}
 <content>
   {{ .Content }}
 </content>
