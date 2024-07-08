@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ if eq .Type "netiquette" }}
+  {{ if not .Params.menu }}
+  <h1>{{ .Title }}</h1>
+  {{ end }}
+{{ end }}
+<content>
+  {{ .Content }}
+</content>
+{{ end }}
