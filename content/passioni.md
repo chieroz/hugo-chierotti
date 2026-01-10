@@ -13,4 +13,4 @@ Nel 1998 a Firenze ho coronato il sogno che accarezzavo da tanti anni e ho corso
 
 Ho imparato a nuotare da bambino, ma come sport lo trovavo noioso anche perché a me piacciono le attività all'aperto. Adoro soprattutto nuotare in acque libere.
 
-La mia passione però rimane il triathlon.
+La mia passione però rimane il triathlon. Purtroppo gli anni passano ma la passione rimane.

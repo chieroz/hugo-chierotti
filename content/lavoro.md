@@ -15,4 +15,4 @@ Macinando notti in bianco, divorando manuali di ogni tipo (e grazie ad alcune pe
 
 Ho lavorato parecchio con ExtJS ma sono migrato a Vue e React; al momento sto utilizzando framework PHP (Symfony e Laravel) e [Hugo](https://gohugo.io), un generatore di siti statici (questo sito è fatto con Hugo). Mi piacciono gli aspetti sistemistici e la progettazione dei db e delle interfacce utente, mentre non capisco molto di grafica, per cui sviluppo soprattutto applicazioni intranet (gestionali, documentali, gestione processi produttivi, archivi digitali, eccetera). Per la parte più creativa collaboro con diversi designer molto bravi.
 
-Date un'occhiata ai progetti che ho sviluppato.
+Date un'occhiata ai progetti che ho sviluppato. Prima o poi saranno tutti funzionanti.
