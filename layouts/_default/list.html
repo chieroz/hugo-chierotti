@@ -1,17 +1,11 @@
 {{ define "main" }}
-<content>
+<article>
   {{ .Content }}
-</content>
+</article>
 
-<hr>
-
-<content>
-  <ul class="blog-posts">
-    {{ range .Pages }}
-    <li>
-      +++ <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
-</content>
+<ul>
+  {{ range .Pages }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
 {{ end }}

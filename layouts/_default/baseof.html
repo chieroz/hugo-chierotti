@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="icon" type="image/png" href="{{ "static/images/favicon.png" | relURL }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:image" content="{{ "static/images/share.png" | absURL }}">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="{{ "css/pico.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  <script async defer data-domain="chierotti.it" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <h1>{{ .Site.Title }}</h1>
+    <nav>
+      <a href="{{ "" | relURL }}">Home</a>
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+      {{ with .Site.GetPage "/netiquette" }}
+      <a href="{{ "netiquette" | relURL }}">Netiquette</a>
+      {{ end }}
+      {{ with .Site.GetPage "/progetti" }}
+      <a href="{{ "progetti" | relURL }}">Progetti</a>
+      {{ end }}
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2003-2026 Carlo Mario Chierotti | P.IVA 01468910052</p>
+  </footer>
+</body>
+
+</html>
