@@ -5,4 +5,9 @@
   {{ end }}
   {{ .Content }}
 </article>
+{{ with .Parent }}
+{{ if ne .IsHome true }}
+<p><a href="{{ .Permalink }}">&larr; {{ .Title }}</a></p>
+{{ end }}
+{{ end }}
 {{ end }}

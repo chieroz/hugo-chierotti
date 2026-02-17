@@ -3,7 +3,7 @@
   {{ .Content }}
 </article>
 
-<ul{{ if eq .Type "progetti" }} class="project-list"{{ end }}>
+<ul>
   {{ range .Pages }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}

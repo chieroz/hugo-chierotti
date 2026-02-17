@@ -1,5 +1,5 @@
 +++
-title = "Lexicon (dizionario online)"
+title = "Magazzino Economato"
 date = "2020-01-03"
 weight = 30
 +++

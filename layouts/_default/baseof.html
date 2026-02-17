@@ -12,6 +12,7 @@
   <meta property="og:image" content="{{ "static/images/share.png" | absURL }}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="{{ "css/pico.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/glightbox.min.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
   <script async defer data-domain="chierotti.it" src="https://plausible.io/js/plausible.js"></script>
 </head>
@@ -40,6 +41,23 @@
   <footer class="container">
     <p>&copy; 2003-2026 Carlo Mario Chierotti | P.IVA 01468910052</p>
   </footer>
+
+  <script src="{{ "js/glightbox.min.js" | relURL }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('article img').forEach(function(img) {
+        if (!img.closest('a')) {
+          var a = document.createElement('a');
+          a.href = img.src;
+          a.classList.add('glightbox');
+          a.setAttribute('data-gallery', 'gallery');
+          img.parentNode.insertBefore(a, img);
+          a.appendChild(img);
+        }
+      });
+      GLightbox({ selector: '.glightbox' });
+    });
+  </script>
 </body>
 
 </html>

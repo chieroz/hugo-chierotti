@@ -17,31 +17,68 @@ header h1 {
   padding-bottom: 0.1em;
 }
 
-/* Project cards */
-.project-list {
-  list-style: none;
-  padding: 0;
+/* Project grid */
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
-.project-list li {
+.project-card {
   border: 1px solid var(--pico-muted-border-color);
   border-radius: 8px;
-  padding: 1.2rem;
-  transition: border-color 0.2s;
-}
-
-.project-list li:hover {
-  border-color: var(--pico-primary);
-}
-
-.project-list li a {
-  font-weight: 600;
+  overflow: hidden;
   text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.project-list li a:hover {
-  text-decoration: underline;
+.project-card:hover {
+  border-color: var(--pico-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card h3 {
+  padding: 0.8rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.project-placeholder {
+  width: 100%;
+  height: 160px;
+  background: var(--pico-muted-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-placeholder span {
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+/* Image gallery thumbnails */
+article p:has(img) {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+article p img {
+  max-height: 180px;
+  width: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+article p img:hover {
+  opacity: 0.8;
 }
