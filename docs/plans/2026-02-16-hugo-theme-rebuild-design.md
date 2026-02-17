@@ -2,60 +2,75 @@
 
 ## Problem
 
-The site uses the hugo-bearblog theme via git submodule. It works but looks barebones — plain Verdana, flat text, `+++` bullet lists, no visual hierarchy. The goal is a professional, clean look while keeping everything that works: Markdown content, Hugo SSG, git-push deploys to Netlify.
+The site used the hugo-bearblog theme via git submodule. It worked but looked barebones — plain Verdana, flat text, `+++` bullet lists, no visual hierarchy. The goal was a professional, clean look while keeping everything that works: Markdown content, Hugo SSG, git-push deploys to Netlify.
 
 ## Approach
 
-Replace the Bear Blog theme with a custom theme built on Simple.css — a ~10KB classless CSS library that styles semantic HTML automatically. Dark mode, responsive nav, good typography, all built in.
+Replaced the Bear Blog theme with a custom theme built on Pico CSS v2 — a classless CSS library with modern typography, responsive nav, and automatic dark mode. Added Inter font, custom accent color, GLightbox for image popups, and a project card grid with thumbnails.
 
 ## Architecture
 
-4 template files + 1 CSS file replace the entire theme:
+5 template files + section-specific template:
 
-- `layouts/_default/baseof.html` — HTML skeleton with header/nav/main/footer
-- `layouts/_default/single.html` — individual pages and articles
-- `layouts/_default/list.html` — section indexes (Progetti, Netiquette)
+- `layouts/_default/baseof.html` — HTML skeleton with Pico CSS, GLightbox, Plausible analytics, auto-lightbox JS
+- `layouts/_default/single.html` — individual pages with back link to parent section
+- `layouts/_default/list.html` — default section index (Netiquette)
+- `layouts/progetti/list.html` — project grid with thumbnail cards and placeholders
 - `layouts/index.html` — homepage
-- `static/css/simple.css` — Simple.css library
 
-## What Gets Removed
+CSS files:
+- `static/css/pico.css` — Pico CSS v2 (minified)
+- `static/css/glightbox.min.css` — GLightbox styles
+- `static/css/custom.css` — Inter font, accent color (#2563eb), header styling, project cards, image thumbnails
+- `static/js/glightbox.min.js` — GLightbox library
+
+## What Was Removed
 
 - `themes/hugo-bearblog/` git submodule
-- `layouts/partials/style.html`
-- `layouts/partials/nav.html`
-- `layouts/partials/footer.html`
-- `layouts/partials/custom_head.html`
+- `layouts/partials/style.html`, `nav.html`, `footer.html`, `custom_head.html`
 - `.gitmodules`
 
-## What Stays Unchanged
+## What Stayed Unchanged
 
-- All 40+ Markdown content files
 - `netlify.toml`
 - `static/static/images/` (favicon, share image)
-- Plausible analytics (moves into baseof.html head)
 - Git push → Netlify auto-deploy workflow
 
 ## Config Changes
 
-- `config.toml`: remove `theme = 'hugo-bearblog'`, update copyright year to 2026
+- `config.toml`: removed `theme = 'hugo-bearblog'`, updated copyright year to 2026, cleaned up comments
+
+## Content Changes
+
+- Projects converted from standalone `.md` files to page bundles (folder with `index.md` + images)
+- Placeholder lorem ipsum text replaced with real descriptions for Polomar and Lexicon
+- Screenshots added to project pages
 
 ## Page Structure
 
-Every page uses this HTML structure (what Simple.css expects):
+Every page uses this HTML structure (what Pico CSS expects):
 
 ```html
-<header>
+<header class="container">
   <h1>chierotti.it</h1>
   <nav>links</nav>
 </header>
-<main>
+<main class="container">
   <!-- page content -->
 </main>
-<footer>
+<footer class="container">
   <p>copyright</p>
 </footer>
 ```
 
+## Key Design Decisions
+
+- **Pico CSS over Simple.css** — Simple.css was tried first but looked dated. Pico has a more modern, refined aesthetic.
+- **Font size 110% with !important** — Pico scales font from 100% to 125% across breakpoints. Locking at 110% gives a comfortable reading size on all screens.
+- **Inter font** — Clean, modern sans-serif that significantly improves the feel over system defaults.
+- **GLightbox** — Auto-wraps article images in lightbox links via JS. No markdown changes needed — just add images to markdown and they become clickable.
+- **Page bundles for projects** — Hugo requires page bundles for co-located images. Projects without images get a CSS placeholder showing the first letter of the project title.
+
 ## Result
 
-Same Markdown workflow, same deploy pipeline. Site goes from raw text to clean professional portfolio with proper typography, responsive navigation, automatic dark mode, and good spacing.
+Same Markdown workflow, same deploy pipeline. Site went from raw text dump to a clean professional portfolio with modern typography, responsive navigation, automatic dark mode, image lightbox, and project card grid with thumbnails.
