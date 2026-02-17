@@ -1,3 +1,47 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root {
   --pico-font-size: 110% !important;
+  --pico-font-family: 'Inter', sans-serif;
+  --pico-primary: #2563eb;
+  --pico-primary-hover: #1d4ed8;
+}
+
+/* Header */
+header h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border-bottom: 3px solid var(--pico-primary);
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+
+/* Project cards */
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-list li {
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: border-color 0.2s;
+}
+
+.project-list li:hover {
+  border-color: var(--pico-primary);
+}
+
+.project-list li a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-list li a:hover {
+  text-decoration: underline;
 }
